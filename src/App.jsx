@@ -1,12 +1,9 @@
-import { useState } from 'react'
+import Header from "./components/Header"
 
 function App() {
   return (
     <>
-      <div className="App">
-        <h1>{"Hola mundo".toUpperCase()}</h1>
-        <p>Un parrafo</p>
-      </div>
+      <Header />
     </>
   )
 }
