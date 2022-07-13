@@ -1,10 +1,10 @@
 function Header () {
 
-
-
-
   return (
-    <h1>Desde Header</h1>
+    <div>
+      <h1>Desde Header</h1>
+      <p>Hola mundo</p>
+    </div>
   )
 }
 
