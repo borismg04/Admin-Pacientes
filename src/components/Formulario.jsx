@@ -1,6 +1,8 @@
 const Formulario = () => {
   return (
-    <div>Formulario</div>
+    <div className="w-1/2">
+      Formulario
+    </div>
   )
 }
 
