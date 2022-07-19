@@ -10,9 +10,36 @@ Componetes
 
 SASS
 Styled Componets 
-Tailwind CSS 
+Tailwind CSSContext
+
 
 Cualquier forma se utiliza bastante 
 
 CLASS : Es una palabra reservada de JS 
 ClassName : Es una palabre directa para JSX 
+
+Que es Hooks 
+Son funciones que permiten enganchar nuestros componentes funcionales a características propias de un componente de clase. 
+Es decir, proporcionan un estado y un ciclo de vida a estos componentes evitándonos a los desarrolladores el uso de las clases.
+
+Categorias de Hooks:
+
+*useState:
+  Es el que nos permite agregarle un estado local a un componente funcional y cambiar ese estado.
+
+*useEffect:
+  Al usar este Hook, le estamos indicando a React que el componente tiene que hacer algo después de renderizarse. 
+  React recordará la función que le hemos pasado (nos referiremos a ella como nuestro “efecto”), y la llamará más tarde después de actualizar el DOM.
+
+*useContext:
+  Esta API nos permite acceder a datos globales de nuestra aplicación desde cualquier componente sin necesidad de pasar esta información manualmente mediante props, 
+  a través de todos los niveles de componentes hasta llegar al que realmente lo necesita.
+
+useReducer
+useCallback
+useMemo
+useRef
+useImperativeHandle
+useRef
+useLayoyutEffect
+useDebugValue
