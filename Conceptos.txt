@@ -25,7 +25,29 @@ Es decir, proporcionan un estado y un ciclo de vida a estos componentes evitánd
 Categorias de Hooks:
 
 *useState:
-  Es el que nos permite agregarle un estado local a un componente funcional y cambiar ese estado.
+  
+  El STATE o Estado es basicamente eso; cuales es el estado de nuestra aplicación.
+
+  El estado es una variable con una información relevante en nuestra aplicación REACT, algunas veces el state pertenece a un componente
+  en especifico o algunas veces deseas compartirlo a lo largo de diferentes componentes 
+
+  //EJEMPLO useState.
+
+  const[cliente,setCliente]=useState({})
+  const[total,setTotal]=useState(0)
+  const[clientes,setClientes]=useState([])
+  const[modal,setModal]=useState(false)
+
+  cliente = es la variable que contiene el valor del estado.
+
+  setCliente = se le conoce como el modificador del estado, es la funcion que va modificar esa variable de cliente y unicamente esa no puede editar otros estados
+              unicamente pueden modificar ese cliente y finalmente se peude ver que solo se tiene la funcion STATE.
+  NOTA:todo lo que tenga SET es una funcion modificadora
+
+  ({})= Es el inicializador de cliente se refiere que empieza como un objeto vacio.
+
+  Cada vez que el STATE cambia,la aplicación de REACT va a renderizar y actualizarse con esos cambios.
+  Para modificar es STATE,su utiliza la funcion que extraemos cuando declaramos el state en nuestro componente
 
 *useEffect:
   Al usar este Hook, le estamos indicando a React que el componente tiene que hacer algo después de renderizarse. 
@@ -35,11 +57,11 @@ Categorias de Hooks:
   Esta API nos permite acceder a datos globales de nuestra aplicación desde cualquier componente sin necesidad de pasar esta información manualmente mediante props, 
   a través de todos los niveles de componentes hasta llegar al que realmente lo necesita.
 
-useReducer
-useCallback
-useMemo
-useRef
-useImperativeHandle
-useRef
-useLayoyutEffect
-useDebugValue
+*useReducer:
+*useCallback
+*useMemo:
+*useRef
+*useImperativeHandle
+*useRef
+*useLayoyutEffect
+*useDebugValue
