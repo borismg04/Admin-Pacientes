@@ -65,3 +65,6 @@ Categorias de Hooks:
 *useRef
 *useLayoyutEffect
 *useDebugValue
+
+REGLAS DE LOS HOOKS 
+
