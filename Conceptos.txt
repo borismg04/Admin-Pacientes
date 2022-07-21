@@ -70,9 +70,12 @@ REGLAS DE LOS HOOKS
   Los hooks se colocaran en la parte superior de tus componentes de React.
   Osea antes del (return)
 
-  No se deben colocar dentro de condicionales , tampoco despeus de un return
+  No se deben colocar dentro de condicionales (if), tampoco despeus de un return
 
-  
+  Ejemplo: 
+    
+
+
 
 
 
