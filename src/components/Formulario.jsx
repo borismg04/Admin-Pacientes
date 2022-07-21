@@ -18,9 +18,9 @@ const Formulario = () => {
     if([nombre,propietario,email,fecha,sintomas].includes("")){
       console.log("Todos los campos son obligatorios");
       setError(true);
-    } else {
-      console.log("Todos los campos estan llenos");
-    }
+      return;
+    } 
+    setError(false);
   }
 
 
@@ -37,7 +37,12 @@ const Formulario = () => {
         className="bg-white shadow-md rounded-lg py-10 px-5 mb-10"
         onSubmit={handleSubmit}
       >
-        {error ? 'Si hay un error en el formulario' : 'No hay error'}
+        {error && 
+          (<div>
+            <p className="bg-red-600 text-white text-center p-3 uppercase font-bold mb-3 rounded-md">Todos los campos son obligatorios</p>
+          </div>
+          )}
+
         <div className="mb-5">
           <label htmlFor="mascota" className="block text-gray-700 uppercase font-bold">
             Nombre Mascota
