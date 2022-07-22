@@ -79,6 +79,11 @@ PROPS
 
   Esto evita no duplicar codigo  y reutilizar esas variables,STATE o estado y funciones en otros componentes es por medio de PROPS o Propiedades
 
+  Nota: Los PROPS se pasan del padre al hijo, nunca se peuden pasar del hijo al padre.
+
+SYNTAXIS:
+  
+
 
 
 
