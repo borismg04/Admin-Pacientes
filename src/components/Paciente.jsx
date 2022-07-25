@@ -4,6 +4,7 @@ const Paciente = ({paciente}) => {
 
   return (
     <div className="mx-5 my-10 bg-white shadow-md px-5 py-10 rounded-xl">
+
         <p className="font-bold mb-3 text-gray-700 uppercase">Nombre:{" "} 
           <span className="font-normal normal-case">{nombre}</span>
         </p>
@@ -24,6 +25,21 @@ const Paciente = ({paciente}) => {
           <span className="font-normal normal-case">{sintomas} 
           </span>
         </p>
+
+        <div>
+          <button 
+            className="bg-red-600 w-full p-3 text-white uppercase font-bold rounded-md 
+                      hover:bg-red-700 cursor-pointer transition-all"
+            type="button"
+            >Eliminar</button>
+
+          <button
+            className="bg-indigo-600 w-full p-3 text-white uppercase font-bold rounded-md
+                      hover:bg-indigo-700 cursor-pointer transition-all"
+            type="button"
+            >Editar</button>
+            
+        </div>
       </div>
   )
 }
