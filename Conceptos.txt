@@ -72,8 +72,18 @@ REGLAS DE LOS HOOKS
 
   No se deben colocar dentro de condicionales (if), tampoco despeus de un return
 
-  Ejemplo: 
-    
+PROPS 
+  Es la forma de pasarle Variables o funciones de otros componentes a otros.
+
+  El state o Funciones que se crean en los componente, solo estaran disponibles en ese mismo componente 
+
+  Esto evita no duplicar codigo  y reutilizar esas variables,STATE o estado y funciones en otros componentes es por medio de PROPS o Propiedades
+
+  Nota: Los PROPS se pasan del padre al hijo, nunca se peuden pasar del hijo al padre.
+
+SYNTAXIS:
+  
+
 
 
 
