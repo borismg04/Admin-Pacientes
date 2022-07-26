@@ -47,7 +47,6 @@ const Paciente = ({paciente,setPaciente,eliminarPaciente}) => {
 
             >Eliminar</button>
 
-
         </div>
       </div>
   )

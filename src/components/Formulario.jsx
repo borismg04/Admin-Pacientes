@@ -39,7 +39,6 @@ const Formulario = ({pacientes,setPacientes,paciente,setPaciente}) => {
     setError(false);
     
     //Objeto de paciente
-
     const objetoPaciente = {
       nombre,
       propietario,
@@ -62,16 +61,13 @@ const Formulario = ({pacientes,setPacientes,paciente,setPaciente}) => {
       objetoPaciente.id = generarId();
       setPacientes([...pacientes,objetoPaciente]);
     }
-
     //Resetear el formulario
     setNombre("");
     setPropietario("");
     setEmail("");
     setFecha("");
     setSintomas("");
-
   }
-
 
   return (
     <div className="md:w-1/2 lg:w-2/5 mx-5">
