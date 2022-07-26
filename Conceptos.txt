@@ -51,11 +51,26 @@ Categorias de Hooks:
 
 *useEffect:
   Al usar este Hook, le estamos indicando a React que el componente tiene que hacer algo después de renderizarse. 
-  React recordará la función que le hemos pasado (nos referiremos a ella como nuestro “efecto”), y la llamará más tarde después de actualizar el DOM.
+  React recordará la función que le hemos pasado (nos referiremos a ella como nuestro “efecto”), 
+  y la llamará más tarde después de actualizar el DOM.
 
   Despues de useState es el mas utilizado
 
   useEffect siempre es un callback,que se ejecuta cuando un state cambia o cuando el componente esta listo.
+
+  Es un sustituto de lo que antes era compoenentDidMount() y componentDidUpdate()
+
+  Al ejecutarse automaticamente cuando el componente esta listo,es un excelente lugar para colocar codigo para consultar una API o LocalStorage
+
+  Debido a que se le puede pasar una dependencia y estar escuchando por los cambios que sucedan en una variable, peude actualizar el 
+  componente cuando ese cambio suceda.
+
+  Sintaxys: 
+    import {useEffect} from 'React'
+
+    useEffect( () =>{
+      console.log('El componente esta listo')
+    },[aqui se ponen las dependecias ])
 
 *useContext:
   Esta API nos permite acceder a datos globales de nuestra aplicación desde cualquier componente sin necesidad de pasar esta información manualmente mediante props, 
