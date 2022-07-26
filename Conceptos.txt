@@ -53,6 +53,10 @@ Categorias de Hooks:
   Al usar este Hook, le estamos indicando a React que el componente tiene que hacer algo después de renderizarse. 
   React recordará la función que le hemos pasado (nos referiremos a ella como nuestro “efecto”), y la llamará más tarde después de actualizar el DOM.
 
+  Despues de useState es el mas utilizado
+
+  useEffect siempre es un callback,que se ejecuta cuando un state cambia o cuando el componente esta listo.
+
 *useContext:
   Esta API nos permite acceder a datos globales de nuestra aplicación desde cualquier componente sin necesidad de pasar esta información manualmente mediante props, 
   a través de todos los niveles de componentes hasta llegar al que realmente lo necesita.
