@@ -7,3 +7,4 @@ const error = ({mensaje}) => {
 };
 
 export default error;
+

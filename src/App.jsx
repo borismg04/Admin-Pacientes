@@ -12,6 +12,8 @@ function App() {
     localStorage.setItem('pacientes', JSON.stringify(pacientes))
   }, [pacientes])
 
+  console.log(pacientes)
+
   const eliminarPaciente = id => {
     const pacientesActualizados = pacientes.filter(paciente => paciente.id !== id);
     setPacientes(pacientesActualizados);
